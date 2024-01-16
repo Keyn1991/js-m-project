@@ -51,7 +51,7 @@ body {
 }
 
 #posts div {
-    width: calc(20% - 24px);
+    width: calc(18% - 24px);
     margin-bottom: 20px;
     padding: 10px;
     border: 1px solid #ddd;
