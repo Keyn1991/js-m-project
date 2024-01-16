@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', () => {
     const params = new URLSearchParams(window.location.search);
     const postId = params.get('postId');
 
@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const backButton = document.createElement('button');
             backButton.textContent = 'Back';
 
-            backButton.addEventListener('click', function() {
+            backButton.addEventListener('click', () => {
                 window.location.href = '../user-details/user-details.html';
             });
 

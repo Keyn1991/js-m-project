@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', () => {
     fetch('https://jsonplaceholder.typicode.com/users')
         .then(response => response.json())
         .then(users => {
@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 `;
 
                 detailsButton.textContent = 'View Details';
-                detailsButton.onclick = function() {
+                detailsButton.onclick = () => {
                     window.location.href = `user-details/user-details.html?userId=${user.id}`;
                 };
 

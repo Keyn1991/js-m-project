@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', () => {
     const params = new URLSearchParams(window.location.search);
     const userId = params.get('userId');
 
@@ -20,13 +20,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
             const backButton = document.createElement('button');
             backButton.textContent = 'Back';
-            backButton.addEventListener('click', function() {
+            backButton.addEventListener('click', () => {
                 window.location.href = '../index.html';
             });
             userDetails.appendChild(backButton);
         });
 
-    document.getElementById('load-posts').addEventListener('click', function() {
+    document.getElementById('load-posts').addEventListener('click', () => {
         fetch(`https://jsonplaceholder.typicode.com/users/${userId}/posts`)
             .then(response => response.json())
             .then(posts => {
