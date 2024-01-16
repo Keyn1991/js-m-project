@@ -13,5 +13,5 @@
 
 ```bash
 git clone https://github.com/Keyn1991/js-m-project
-cd YourRepository
-# Add additional setup steps here
+cd js-m-project
+
